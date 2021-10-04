@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGIN SYSTEM</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="content" id="content">
+    <div id="mainButton">
+      <div class="btn-text" id="btnText" onclick="openForm()">Sign In</div>
+      <div class="modal">
+        <div class="drop-shadow">
+          <div class="glass"></div>
+          <div class="login-box">
+            <h1>SIGN IN</h1>
+            <form action="" method="post">
+              <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input placeholder="Username" />
+              </div>
+
+              <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" />
+              </div>
+              <input class="btn" value="Login" onclick="closeForm()" />
+            </form>
+            <h6>
+              Don't have an account yet?
+              <a href="#" onclick="closeForm()">Register</a>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
